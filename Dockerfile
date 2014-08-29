@@ -1,4 +1,5 @@
 FROM ubuntu
+RUN apt-get update
 RUN apt-get install -y python python-setuptools ca-certificates
 RUN sudo easy_install pip
 RUN pip install apache-libcloud
